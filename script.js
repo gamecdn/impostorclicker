@@ -30,7 +30,7 @@ function init() {
     if (impounlocked[i] || dev) {
       div.classList.add("impostore");
       div.style.background = impocolors[i];
-      image.src = "images/" + imponames[i] + ".png";
+      image.src = imponames[i] + ".png";
       image.height = "100";
       title.innerText = imponames[i] + " Impostor";
       price.innerText = impoprices[i];
@@ -47,7 +47,7 @@ function init() {
       })(i);
     } else {
       div.style.background = "#808080";
-      image.src = "images/Unknown.png";
+      image.src = "Unknown.png";
       image.height = "100";
       title.innerText = "Unknown Impostor";
       price.innerText = "???";
