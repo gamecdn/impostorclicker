@@ -1,9 +1,9 @@
 // CONFIG #################################################
-var dev = true;
+var dev = !true;
 var spc = 1;
 var sps = 0;
 var clicks = 0;
-var sussies = 1000000;
+var sussies = dev ? 1000000000 : 0;
 // STORE ##################################################
 var imponames = ["Coral", "Tan", "Gray", "Banana", "Rose", "Maroon", "Lime", "Cyan", "Brown", "Purple", "White", "Black", "Yellow", "Orange", "Pink", "Green", "Blue", "Red", "Secret", "Ancient"];
 var impocolors = ["#EC7578", "#928776", "#8397A7", "#FFFEBE", "#ECC0D3", "#6B2B3C", "#50F039", "#38E2DD", "#71491E", "#6B2FBC", "#D7E1F1", "#3F474E", "#F6F657", "#F07D0D", "#EE54BB", "#11802D", "#132ED2", "#C61111", "#1D9853", "#617218"];
