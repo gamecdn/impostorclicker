@@ -1,0 +1,50 @@
+* {
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  user-select: none;
+}
+body {
+  background: url("images/background.jpg");
+  background-size: cover;
+}
+#impo, #sus, #upgrades {
+  display: inline-block;
+  width: 33vw;
+}
+#upgrades, #sus {
+  float: left;
+}
+#sus {
+  position: absolute;
+  left: 33vw;
+}
+#impo {
+  float: right;
+  height: 100vh;
+  overflow-y: auto;
+  position: absolute;
+  left: 67vw;
+}
+#amogus {
+  width: 100%;
+  animation: spin 5s cubic-bezier(0.4, 0.6, 0.6, 0.4) 0s infinite;
+  transform: scale(1, 1);
+  cursor: pointer;
+}
+.impostore2, .upgradestore {
+  cursor: pointer;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+.impostore2:not(.impostore) {
+  opacity: 0.6;
+}
+.impostore2 > div {
+  display: inline-block;
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(30deg);}
+  75% {transform: rotate(-30deg);}
+  100% {transform: rotate(0deg);}
+}
