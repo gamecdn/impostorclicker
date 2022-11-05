@@ -1,5 +1,5 @@
 // CONFIG #################################################
-var dev = !true;
+var dev = true;
 var spc = 1;
 var sps = 0;
 var clicks = 0;
@@ -12,11 +12,13 @@ var impoprices = [100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600, 51200, 102
 var impooutput = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4069, 8192, 16384, 32768, 65546, 131072, 262144, 524288];
 var impoamounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 // UPGRADES ###############################################
-var upgradenames = ["Better Clicks", "First Sus", "Even Better Clicks", "Wow Clicks"];
-var upgradedesc = ["Clicks x2", "Coral Impostors Better", "Clicks x3", "Clicks x4"];
-var upgraderequisites = [[0, 10], [1, 1], [0, 100], [0, 1000]];
-var upgradeprices = [10, 10, 20, 40];
-var upgradereward = [[0, 2], [1, 1.5], [0, 3], [0, 4]];
+var upgradenames = ["Better Clicks", 
+                    "First Sus", "More Sus", "Sus V3", "Fruit", "Flower", "Maroon 5", "Sour", "Bluish-Greenish Color", "Doo Doo Fard", "\"Girly\"", "Not Black", "Not White", "Orange - Red", "Red + Yellow", "\"Girlier\"", "Grass", "Sky", "IMPOSTOR", "___ has joined the game", "CoRaL Is BeTtEr"];
+var upgradedesc = ["Clicks x2", 
+                   "Coral Impostors Better", "Tan Impostors Better", "Gray Impostors Better", "Banana Impostors Better", "Rose Impostors Better", "Maroon Impostors Better", "Lime Impostors Better", "Cyan Impostors Better", "Brown Impostors Better", "Purple Impostors Better", "White Impostors Better", "Black Impostors Better", "Yellow Impostors Better", "Orange Impostors Better", "Pink Impostors Better", "Green Impostors Better", "Blue Impostors Better", "Red Impostors Better", "Secret Impostors Better", "Ancient Impostors Better"];
+var upgraderequisites = [[0, 10], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1]];
+var upgradeprices = [10, 100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600, 51200, 102400, 204800, 409600, 819200, 1638400, 3276800, 6553600, 13107200, 26214400, 52428800];
+var upgradereward = [[0, 2], [1, 1.5], [2, 1.5], [3, 1.5], [4, 1.5], [5, 1.5], [6, 1.5], [7, 1.5], [8, 1.5], [9, 1.5], [10, 1.5], [11, 1.5], [12, 1.5], [13, 1.5], [14, 1.5], [15, 1.5], [16, 1.5], [17, 1.5], [18, 1.5], [19, 1.5], [20, 1.5]];
 // MAIN ###################################################
 function init() {
   for (var i = 0; i < imponames.length; i++) {
