@@ -18,6 +18,9 @@ body {
   position: absolute;
   left: 33vw;
 }
+#upgrades {
+  overflow-y: auto;
+}
 #impo {
   float: right;
   height: 100vh;
